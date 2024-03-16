@@ -1,0 +1,6 @@
+- extension in code editor (VSCode)
+- using Python's http.server module:
+  in terminal print 'python/python3 -v' to check if Python is installed;
+  navigate to the directory that contains the website code 
+  and print command ,python3 -m http.server';
+  to se content of the directory, go to browser type URL 'localhost:8000' 

@@ -1,0 +1,49 @@
+CSS (Cascading Style Sheet) is the code that styles web content.
+Css is a style sheet language.
+
+    Anatomy ofa css rulset
+the whole structure is called a 'rulset' refered to as just 'rule'.
+' p {
+    color; red;
+}
+'p' is a 'selector';
+'color' is a property;
+'red' is a property value
+both(property and a value) s called 'declaration'.
+
+Selector:
+    (html element to be styled)
+
+Declaration:
+    (specifies which of the element's properties we want to style.
+
+Properties:
+    (color, font, width, height ...)
+Property value:
+    (color : red, green, yellow ...)
+
+Selecting multiple elements
+    "
+    p,
+    li,
+    h1 {
+        color: red;
+    }
+
+Fonts and text
+    '
+    <link
+    href="https://font.googleapi.com/css?family=Open+Sans" rel="stylesheet">
+    '
+Box model
+    css layout is based on the box model.
+     each ox has properties like:
+        - padding (space around the content; for example around the paragraph text)
+        - border (the solid line between 'padding' and 'margin')
+        - margin (space around the html element, outside of the border )
+    and  also other properties:
+        - width (of an element)
+        - background-color (the color behind an element's content)
+        - color (color of an element's content)
+        - text-shadow(shadow...)
+        - display(sets the display mode of an element)

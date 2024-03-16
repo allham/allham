@@ -1,0 +1,135 @@
+JavaScript is a programmng language that interacts with the web(games, dynamic styling, 
+animation ...)
+Invented by Brendan Eich.
+With JS we could create:
+    - games
+    - animated 2D, 3D graphics
+    - database-driven apps
+    - and much more ...
+        Language basics
+    Variables
+        Containers for values.
+        We declare variable with the key word 'let' ('const' or 'var'),
+        folowed by name of the variable.:
+            <
+            let maVar 
+            >
+            <
+            let myVar = "hello";
+            >
+            
+
+    Comments    
+/* Everything between is a comment*/
+// This is a comment ,too.
+    Operators
+        - Addition ('+')
+        - Subtraction ('-')
+        - Multiplication ('*')
+        - Division ('/')
+        - Assignment ('=')
+        - Strict equality ('===')
+
+    Conditions
+        A code structure used to test if an expression returns true or not:
+            'if ... else ' statement
+            example:
+            < 
+            let iceCream = 'chocolate'
+            if(iceCream === 'chocolate'){
+                alert('I lve ice cream!')
+            } else {
+                alert('I hate ice cream')
+            } 
+            >
+
+    Functions
+        A body of code (as a function)executed when calling function name.
+        (variable name followed by parentheses):
+            - document.querySelector('h1');
+            - alert('hello');
+            (these functions are built in the browser)
+        Arguments go inside the parentheses, separated by commas
+            (if there are more than one argument)
+        Example of a simple function:
+            <
+            function multiply(num1, num2){
+                let result = num1 + num2;
+                return result
+            }
+            >
+            ('num1' and 'num2' are placeholders for 'arguments')
+        Scoping
+            (variables defined inside functions are only available
+            inside those functions - scoping)
+
+        Events
+
+    A Code ctructure that listen for activity in the browser,
+    and run code in response (for example 'click event', which is fired 
+    by the browser when you click with the mouse. ):
+    <
+    document.querySelector('html').addEventListener('click, function(){
+        alert('Stop poking me!');
+    })
+    An example:
+    <
+    const myImage = document.querySelector('img');
+    myImage.onClick = ()=>{
+        const mySrc = myImage.getAttribute('src');
+        if(mySrc === '../Images/fox.avif'){
+            myImage.getAttribute('src', '../Images/images/firefox-logo.png')
+        } else {
+            myImage.setAttribute('src', '../Images/bmw.avif');
+        }
+    };
+    >
+    This is what happened here.
+        We stored reference to <img> element in 'myImage'.
+        We made its 'onclick' event handler property equal 
+        to a anonymous function.
+        When it is clicked:
+        1. the code retrieves the value of the image's 'src' getAttribute
+        2. the code uses conditional(if statement) to check if the 'src'
+           value is equal to the path of the original image:
+            - if it is, the code changes the 'src' value to the path 
+            of the second image, and so on ...
+
+    Personalized welcome message
+        In index.html:
+        <button>Change user</button>
+        In main.js:
+        <
+        let myButton = document.querySelector('button');
+        let myHeading = document.querySelector('h1');
+        >
+        This takes references to the button and the myHeading
+        storing each inside variables('myButton', 'myHeading')
+
+        Next add the function:
+        <
+        function setUerName = ()=>{
+            const myName = prompt('Enter your name.');
+            localStorage.setItem('name', myName);
+            myHeading.textContent = `Mozilla is cool ${myName}`;
+        }
+        >
+        Add initialization code:
+        <
+        if (!localStorage.getItem('name')){
+            setUerName();
+        } else {
+            const storedName = localStorage.getItem('name');
+            myHeading.textContent = `Mozilla is cool, ${storedName}`;
+        }
+        Put 'onclick' event handler on the 'button',
+        when clicked , 'setUserName()' runs:
+        <
+        myButton.onclick = ()=>{
+            etuserName();
+        };
+        >
+
+
+
+

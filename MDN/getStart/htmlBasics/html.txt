@@ -1,0 +1,60 @@
+HTML(HyperTextMarkupLanguage) i s a code used to structure a web page and its content.
+Consists of series of 'elements' which encloses(wrap) parts of content.
+Anatomy of an 'element':
+    - opening tag (name of the element wrapped in angle brackets)
+    - content (text ...)
+    - closing tag(angle brackets with a forward slash)
+    an example '<p>My cat is very grumpy</p>' 
+Elements can have attributes:
+    '<p class="my-cat">My cat is very grumpy</p>'
+    'class' is the attribute name, and 
+    'my-cat' is  the attribute value.
+Nesting elements:
+    '<p>My cat is<strong>very</strong> grumpy.<p/>';
+    'strong' element is nested in the 'p' element.
+Void elements:
+    elements that have no content  and have no closing tag('img').
+
+Anatomy of an HTML document:
+    " 
+        <DOCTYPE html>
+        <html lang='en'>
+            <head>
+                <meta>
+                <title>Document</title>
+                <link rel='stylesheet' href='style.css'>
+            </head?
+            <body>
+            <img src="images/img.png" alt="some old picture">
+            </body>
+        </html>
+    "
+
+    '<DOCTYPE html>' is declaration meaning that we use 'HTML5' version of HTML.
+    '<html> element wraps whole content of the page.
+    '<head>' element is a container for staff that is not showed on the page itself;
+    includes keywords, name of  the author , css style, links, character set;
+    '<meta>' , ,<title>', '<link>'...
+    '<body>' element  contains all the content that visitors to the page can see:
+        text, images, videos ...
+            Images are displayed in the page using  the '<img>' element
+            with 'src' attribute:
+    '<img src="path to the image" alt="explanatory text">'
+
+        Marking up text
+    Headings ('<h1>, <h2>,... <h6>)
+    Comments , the browser ignores comments as it renders the code
+        ('<!__ comment __>')
+    Paragraphs ('<p>) elements contains paragraphs of text.
+    Lists; there are two types : 'ordered'('ol>') and 'unordered'('<ul>');
+        each item inside list is wraped in the '<li>' element.
+        example:
+        " 
+        <ul>
+            <li>'one'<li>
+            <li>'two'<li>
+        <ul>
+        "
+    links
+        To add link we use '<a>' element , 'a' is short for 'anchor',
+        and adding an 'href' attribute(it stands for 'hypertext reference')

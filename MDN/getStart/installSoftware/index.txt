@@ -1,0 +1,3 @@
+text editor: Visual Studio Code
+browser: Firefox, Chrome, Microsoft Edge, Opera ...
+local web server

@@ -1,0 +1,5 @@
+- computer : windows, macOS, Linux
+- text editor : Visual Studio Code
+- web browser: Firefox, Chrome, Microsoft edge, Opera, Safari ...
+- a version control system: Git (version control system) along 
+  with GitHub (hosting service)
